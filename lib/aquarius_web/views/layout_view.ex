@@ -1,3 +1,3 @@
-defmodule AQWeb.LayoutView do
-  use AQWeb, :view
+defmodule AQRWeb.LayoutView do
+  use AQRWeb, :view
 end

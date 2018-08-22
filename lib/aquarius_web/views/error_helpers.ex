@@ -1,4 +1,4 @@
-defmodule AQWeb.ErrorHelpers do
+defmodule AQRWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -36,9 +36,9 @@ defmodule AQWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(AQWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(AQRWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(AQWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(AQRWeb.Gettext, "errors", msg, opts)
     end
   end
 end

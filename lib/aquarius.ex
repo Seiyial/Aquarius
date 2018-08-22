@@ -1,6 +1,6 @@
-defmodule AQ do
+defmodule AQR do
   @moduledoc """
-  AQ keeps the contexts that define your domain
+  AQR keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

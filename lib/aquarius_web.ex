@@ -1,12 +1,12 @@
-defmodule AQWeb do
+defmodule AQRWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use AQWeb, :controller
-      use AQWeb, :view
+      use AQRWeb, :controller
+      use AQRWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,17 +19,17 @@ defmodule AQWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: AQWeb
+      use Phoenix.Controller, namespace: AQRWeb
       import Plug.Conn
-      import AQWeb.Router.Helpers
-      import AQWeb.Gettext
+      import AQRWeb.Router.Helpers
+      import AQRWeb.Gettext
     end
   end
 
   def view do
     quote do
       use Phoenix.View, root: "lib/aquarius_web/templates",
-                        namespace: AQWeb
+                        namespace: AQRWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
@@ -37,9 +37,9 @@ defmodule AQWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import AQWeb.Router.Helpers
-      import AQWeb.ErrorHelpers
-      import AQWeb.Gettext
+      import AQRWeb.Router.Helpers
+      import AQRWeb.ErrorHelpers
+      import AQRWeb.Gettext
     end
   end
 
@@ -54,7 +54,7 @@ defmodule AQWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import AQWeb.Gettext
+      import AQRWeb.Gettext
     end
   end
 

@@ -1,3 +1,6 @@
+# Frontend
+/frontend/node_modules/
+
 # App artifacts
 /_build
 /db

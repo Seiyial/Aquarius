@@ -1,3 +1,3 @@
-defmodule AQWeb.PageViewTest do
-  use AQWeb.ConnCase, async: true
+defmodule AQRWeb.PageViewTest do
+  use AQRWeb.ConnCase, async: true
 end

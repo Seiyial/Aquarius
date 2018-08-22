@@ -7,15 +7,15 @@ use Mix.Config
 
 # General application configuration
 config :aquarius,
-  namespace: AQ,
-  ecto_repos: [AQ.Repo]
+  namespace: AQR,
+  ecto_repos: [AQR.Repo]
 
 # Configures the endpoint
-config :aquarius, AQWeb.Endpoint,
+config :aquarius, AQRWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "Dno+QN/w5bb7Deukkj4+HTMslXrtyqXF26JIq8mRuLoPn7o6ois6xeJ3R0RDPNlA",
-  render_errors: [view: AQWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: AQ.PubSub,
+  render_errors: [view: AQRWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: AQR.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

@@ -1,7 +1,7 @@
-defmodule AQWeb.Endpoint do
+defmodule AQRWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :aquarius
 
-  socket "/socket", AQWeb.UserSocket
+  socket "/socket", AQRWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -37,7 +37,7 @@ defmodule AQWeb.Endpoint do
     key: "_aquarius_key",
     signing_salt: "gtsYGk+z"
 
-  plug AQWeb.Router
+  plug AQRWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

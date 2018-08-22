@@ -1,4 +1,4 @@
-# AQ
+# AQR
 
 To start your Phoenix server:
 

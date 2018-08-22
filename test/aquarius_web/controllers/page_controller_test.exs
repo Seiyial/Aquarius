@@ -1,5 +1,5 @@
-defmodule AQWeb.PageControllerTest do
-  use AQWeb.ConnCase
+defmodule AQRWeb.PageControllerTest do
+  use AQRWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

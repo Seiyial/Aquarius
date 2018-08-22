@@ -1,4 +1,4 @@
-defmodule AQ.Application do
+defmodule AQR.Application do
   use Application
 
   # See https://hexdocs.pm/elixir/Application.html
@@ -9,23 +9,23 @@ defmodule AQ.Application do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      supervisor(AQ.Repo, []),
+      supervisor(AQR.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(AQWeb.Endpoint, []),
-      # Start your own worker by calling: AQ.Worker.start_link(arg1, arg2, arg3)
-      # worker(AQ.Worker, [arg1, arg2, arg3]),
+      supervisor(AQRWeb.Endpoint, []),
+      # Start your own worker by calling: AQR.Worker.start_link(arg1, arg2, arg3)
+      # worker(AQR.Worker, [arg1, arg2, arg3]),
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: AQ.Supervisor]
+    opts = [strategy: :one_for_one, name: AQR.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    AQWeb.Endpoint.config_change(changed, removed)
+    AQRWeb.Endpoint.config_change(changed, removed)
     :ok
   end
 end

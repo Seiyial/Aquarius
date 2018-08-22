@@ -1,5 +1,5 @@
-defmodule AQWeb.ErrorView do
-  use AQWeb, :view
+defmodule AQRWeb.ErrorView do
+  use AQRWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

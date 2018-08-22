@@ -1,3 +1,3 @@
-defmodule AQWeb.PageView do
-  use AQWeb, :view
+defmodule AQRWeb.PageView do
+  use AQRWeb, :view
 end

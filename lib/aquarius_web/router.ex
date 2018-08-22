@@ -1,5 +1,5 @@
-defmodule AQWeb.Router do
-  use AQWeb, :router
+defmodule AQRWeb.Router do
+  use AQRWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule AQWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", AQWeb do
+  scope "/", AQRWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", AQWeb do
+  # scope "/api", AQRWeb do
   #   pipe_through :api
   # end
 end

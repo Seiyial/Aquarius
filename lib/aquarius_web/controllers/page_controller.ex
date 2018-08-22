@@ -1,5 +1,5 @@
-defmodule AQWeb.PageController do
-  use AQWeb, :controller
+defmodule AQRWeb.PageController do
+  use AQRWeb, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

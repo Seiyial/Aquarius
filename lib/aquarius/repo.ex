@@ -1,4 +1,4 @@
-defmodule AQ.Repo do
+defmodule AQR.Repo do
   use Ecto.Repo, otp_app: :aquarius
 
   @doc """
