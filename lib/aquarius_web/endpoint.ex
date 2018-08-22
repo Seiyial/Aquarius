@@ -9,7 +9,7 @@ defmodule AQRWeb.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/", from: :aquarius, gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w(app.css fonts images favicon.ico robots.txt app.js)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

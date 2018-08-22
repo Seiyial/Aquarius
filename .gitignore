@@ -1,5 +1,10 @@
+# ACRA Artefacts
+/priv/repo/files/
+
 # Frontend
 /frontend/node_modules/
+/frontend/.cache/
+/frontend/dist/
 
 # App artifacts
 /_build

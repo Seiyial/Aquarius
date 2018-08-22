@@ -1,5 +1,9 @@
 # AQR
 
+Aquarius is an (incomplete) ACRA Search tool cum API.
+
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
